@@ -3,12 +3,12 @@ Exercise 1 - Write a Poem
 1. Title your poem
 To practice the basics of HTML, let's have you write and markup a poem. To start off with, what will the title of your poem be?
 
-Using the <h1> tag we learned about, add a heading for your poem. This will be your title.
+Using the (h1) tag we learned about, add a heading for your poem. This will be your title.
 
 Exercise 2 - You can learn text tags
 
 1. Make up the text
-We've made this webpage with the words to 'You can learn anything', a video that Khan Academy made. Using both the <strong> and <em> tags that you just learned, mark up this text to show what you think should be emphasized and highlighted.
+We've made this webpage with the words to 'You can learn anything', a video that Khan Academy made. Using both the (<strong>) and (<em>) tags that you just learned, mark up this text to show what you think should be emphasized and highlighted.
 
 Exercise 3 - Your Learning list
 
@@ -29,7 +29,7 @@ Exercise 5 -  Links you love
 1. Add links
 This webpage contains a list with three empty items. Add a link in each item, pointing at one of your favorite websites.
 2. Link Love
-Now, below the list, turn the heart image into a link by writing the opening <a> tag before the <img> tag and writing the closing </a> tag after it. 
+Now, below the list, turn the heart image into a link by writing the opening (<a>) tag before the (<img>) tag and writing the closing (</a>) tag after it. 
 
 Exercise 6 - Jump Around
 
