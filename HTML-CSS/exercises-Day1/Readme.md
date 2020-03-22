@@ -44,3 +44,10 @@ There's one more link at the bottom that should link back to the top. Fix its hr
 This is a webpage to show the dinner menu for a restaurant. We've created the initial table with three columns for the meal, ingredients, and price. Now, add three rows of data to the table, one row for each meal.
 
 
+<h2>Project:Recipe Book</h2>
+
+<h3>Create a web page with your favorite recipes! 
+
+The recipe book should have a table of contents linking to each recipe below, using internal links. Each recipe should have a table for the ingredients, a list of details, and a list and/or paragraphs of the steps required. If you use recipes from the internet, be sure to add a link to the website.
+
+Use CSS to style the recipe book, using a mix of the simple selectors and colors that you've learned.</h3>
