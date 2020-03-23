@@ -47,4 +47,13 @@ In this second step, position the greeting on top of the planet as well.
 <h3> 3. Order them</h3>
 Now use a z-index property to make sure that the greeting always shows up over the creature, not behind.
 
+<h2>Exercise 5 - Floating clouds</h3>
 
+<h3> 1. Float the photo</h3>
+
+<h3> 2. Float the sidebar</h3>
+
+There's a yellow div of information. Make that div float to the right of the text, so that the photo is on the left side of the text and the yellow div is on the right side of the text.
+
+<h3> 3. Add margins </h3>
+Now that we have elements floated next to eachother, we should make sure to separate them with some whitespace. Add appropriate margins to the photo and the sidebar.>
