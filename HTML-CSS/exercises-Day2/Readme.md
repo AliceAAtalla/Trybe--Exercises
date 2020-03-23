@@ -36,4 +36,15 @@ The photos look a bit too close to each other. Add margin to them, either on all
 <h3> 3. Add padding </h3>
 The photos are too close to the side of the gallery div, and it looks weird. Add padding around all sides of the gallery div so that it looks better.
 
+<h2>Exercise 4 - Position planet</h2>
+
+<h3> 1. Position the creature</h3>
+This webpage contains an image of a planet, an image of a creature, and a div with a greeting. Your job is to make it look like the creature is sitting on the planet and saying the greeting. In this first step, use absolute positioning to put the creature on top of the planet somewhere.
+
+<h3> 2. Position the greeting</h3>
+In this second step, position the greeting on top of the planet as well.
+
+<h3> 3. Order them</h3>
+Now use a z-index property to make sure that the greeting always shows up over the creature, not behind.
+
 
