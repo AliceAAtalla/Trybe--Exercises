@@ -12,6 +12,10 @@ var info2 = {
     recorrente: 'Sim',
 };
 
-for (i in info && info2) {
-    console.log(info[i] + ' e ' + info2[i])
+for (let i in info && info2) {
+    if (i == "recorrente" && info[i] === info2[i]) {
+        console.log("Ambos recorrente");
+    } else {
+        console.log(info[i] + ' e ' + info2[i]);
+    } 
 }
