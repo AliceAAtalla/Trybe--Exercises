@@ -15,4 +15,5 @@ for (let linha = 1; linha < n; linha +=1) {
     }   position -= 1;
         console.log(padrao);
         padrao = "";
-}
+
+

@@ -21,3 +21,4 @@ for (lineIndex = 0; lineIndex <= midOfMatrix; lineIndex++) {
   controlRight--;
   controlLeft++;
 };
+

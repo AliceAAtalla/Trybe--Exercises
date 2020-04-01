@@ -33,3 +33,4 @@ for (let lineIndex = matrix.length - 1; lineIndex >= 0; lineIndex--) {
   console.log(result);
   result = '';
 }
+

@@ -21,6 +21,4 @@ if ( triangulo === 180) {
 else {
   console.log("Error");
 }
-
-
  
