@@ -58,6 +58,7 @@
 		<script>
 			let title = document.createElement('h1');
 			title.innerHTML = 'Exercício 4.5 - JavaScript DOM';
+			title.className = 'title';
 			document.body.appendChild(title);
 
 			let div1 = document.createElement('div');
@@ -109,6 +110,18 @@
 				let h3 = document.createElement('h3');
 				h3.innerHTML = 'Trybe';
 				div1.appendChild(h3);
+				h3.className = 'description';
+			}
+
+			div1.removeChild(div3);
+
+			div4.style.marginRight = 'auto';
+
+			div2.parentNode.style.backgroundColor = 'purple';
+
+			
+			for (let i = 0; i < 2; i++) {
+				lista.removeChild(lista.lastElementChild);
 			}
 		</script>
 	</body>
