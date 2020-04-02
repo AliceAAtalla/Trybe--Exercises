@@ -20,7 +20,22 @@
 		</div>
 
 		<script>
-			
+			let irmao = document.createElement('div');
+			irmao.id = 'elementoVoceEstaAqui';
+			document.querySelector('#pai').append(irmao);
+
+			let filho = document.createElement('div');
+			filho.id = 'elementoVoceEstaLá';
+			document.querySelector('#elementoOndeVoceEsta').append(filho);
+
+			let filho2 = document.createElement('div');
+			filho2.id = 'filhoDoFilhoFilho';
+			document.querySelector('#primeiroFilhoDoFilho').append(filho2);
+
+			console.log(
+				document.querySelector('#filhoDoFilhoFilho').parentNode.parentNode
+					.nextElementSibling
+			);
 		</script>
 	</body>
 </html>
