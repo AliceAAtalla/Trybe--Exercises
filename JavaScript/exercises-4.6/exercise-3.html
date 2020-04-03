@@ -14,9 +14,11 @@
 			href="http://nptcstudents.co.uk/andrewg/jsweb/css/jsweb.css"
 		/>
 
-		<!-- JavaScript could go up here -->
-		<!-- JavaScript could go up here -->
-		<!-- JavaScript could go up here -->
+		<script>
+			function clicou() {
+				alert('You clicked the button');
+			}
+		</script>
 	</head>
 
 	<body>
@@ -39,10 +41,24 @@
 				</p>
 
 				<div class="exampleblock">
-					Add your button here
+					<button onclick="clicou()">Click Here!</button>
 				</div>
 
 				<h2>Task 2</h2>
+
+				<script language="javascript" type="text/javascript">
+						<!-- JavaScript for task 2 here -->
+
+					function clicar() {
+					let gamePrice = 39.99;
+					let discount = 0.20;
+						alert('R$' + Math.round(gamePrice * discount) + ' off!');
+					};
+				</script>
+
+				<div class="exampleblock">
+					<button onclick="clicar()">Discount</button>
+				</div>
 
 				<p>
 					Add two lines of script to the &lt;script&gt; tag in the source of
@@ -64,12 +80,6 @@
 					>
 					to achieve this.
 				</p>
-
-				<script language="javascript" type="text/javascript">
-					<!-- JavaScript for task 3 here -->
-					<!-- JavaScript for task 3 here -->
-					<!-- JavaScript for task 3 here -->
-				</script>
 
 				<p>
 					You may want to consider using JavaScript's built in
@@ -96,6 +106,25 @@
 							>
 							may be of help!
 						</p>
+
+						<script language="javascript" type="text/javascript">
+							function setNewImage() {
+								document.getElementById('img1').src =
+									'https://cdn.pixabay.com/photo/2020/03/28/16/03/dog-4977599_960_720.jpg';
+							}
+							function setOldImage() {
+								document.getElementById('img1').src =
+									'https://cdn.pixabay.com/photo/2020/03/31/20/22/family-4989137_960_720.jpg';
+							}
+						</script>
+
+						<img
+							id="img1"
+							onmouseover="setNewImage()"
+							onmouseout="setOldImage()"
+							src="https://cdn.pixabay.com/photo/2020/03/31/20/22/family-4989137_960_720.jpg"
+							width="500px"
+						/>
 					</li>
 				</ol>
 			</div>
