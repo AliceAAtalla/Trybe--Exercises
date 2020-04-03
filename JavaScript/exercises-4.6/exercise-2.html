@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<label
+			>Square this number:
+			<input type="number" id="square-input" size="2" />
+		</label>
+		<button id="square-button">Calculate</button>
+		<br /><br />
+
+		<label
+			>Half this number:
+			<input type="number" id="half-input" size="2" />
+		</label>
+		<button id="half-button">Calculate</button>
+		<br /><br />
+
+		<label>
+			Fraction:
+			<input type="number" id="percent1-input" size="2" />
+		</label>
+		<label>
+			Whole:
+			<input type="number" id="percent2-input" size="2" />
+		</label>
+		<button id="percent-button">Calculate</button>
+		<br /><br />
+
+		<label
+			>Calculate area of circle with radius:
+			<input type="number" id="area-input" size="2" />
+		</label>
+		<button id="area-button">Calculate</button>
+		<br /><br />
+		<div id="solution"></div>
+
+		<script>
+			let solution = document.querySelector('#solution');
+
+			let buttonSquare = document.querySelector('#square-button');
+			let square = document.querySelector('#square-input').value;
+			function squareNumber(square) {
+				let resultSquare = Math.pow(square, 2);
+				solution.innerHTML =
+					'The result of squaring the number ' +
+					square +
+					' is ' +
+					resultSquare +
+					'.';
+			}
+			buttonSquare.addEventListener('click', squareNumber);
+
+			let halfButton = document.querySelector('#half-button');
+			halfButton.addEventListener('click', halfNumber);
+			let half = document.querySelector('#half-input').value;
+			function halfNumber(half) {
+				let resultHalf = half / 2;
+				solution.innerHTML = 'Half of ' + half + ' is ' + resultHalf + '.';
+			}
+
+			let percentButton = document.querySelector('#percent-button');
+			percentButton.addEventListener('click', percentOf);
+			let percent1 = document.querySelector('#percent1-input').value;
+			let percent2 = document.querySelector('#percent2-input').value;
+
+			function percentOf(percent1, percent2) {
+				let resultPercent = (percent1 / percent2) * 100;
+				solution.innerHTML =
+					percent1 + ' is ' + resultPercent + '%' + ' of ' + percent2 + '.';
+			}
+
+			let areaButton = document.querySelector('#area-button');
+			areaButton.addEventListener('click', areaOfCircle);
+			let radius = document.querySelector('#area-input').value;
+
+			function areaOfCircle(radius) {
+				let resultArea = Math.pow(radius, 2) * Math.PI;
+				solution.innerHTML =
+					'The area for a circle with radius ' +
+					radius +
+					'	is  ' +
+					resultArea.toFixed(2) +
+					'.';
+			}
+
+			let allButton = document.querySelector('#square-button');
+			allButton.addEventListener('click', allResolutions);
+			
+			function allResolutions(half) {
+				let halfNum = halfNumber(half);
+				let squareNum = squareNumber(halfNum);
+				let circleArea = areaOfCircle(squareNum);
+				let percentageNum = percentOf(circleArea, squareNum);
+				solution.innerHTML = ''Half of ' + half + ' is ' + halfNum + '.'+ '<br>' +
+				'The result of squaring is ' + squareNum + '.' + '<br>' +
+				'The area for a circle is  ' + circleArea.toFixed(2) + '.' + '<br>' +
+				circleArea + ' is ' + percentageNum + '%' + ' of ' + squareNum + '.';
+			}
+		</script>
+	</body>
+</html>
+
+<!-- > For each operation, create an event listener for the button, and when it's clicked, find the value of the appropriate
+   input and show the result of the calculation in the solution div.
+> Bonus: respond to key presses so that the user doesn't have to click the button.
+
+1 - Write a function called squareNumber that will take one argument (a number), square that number, and return the result. 
+It should also log a string like "The result of squaring the number 3 is 9."
+2 - Write a function called halfNumber that will take one argument (a number), divide it by 2, and return the result. 
+It should also log a string like "Half of 5 is 2.5.".
+3 - Write a function called percentOf that will take two numbers, figure out what percent the first number represents 
+of the second number, and return the result. It should also log a string like "2 is 50% of 4."
+4 - Write a function called areaOfCircle that will take one argument (the radius), calculate the area based on that, 
+and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
+> Bonus: Round the result so there are only two digits after the decimal.
+5 - Write a function that will take one argument (a number) and perform the following operations, using the functions you 
+wrote earlier1:
+> Take half of the number and store the result.
+> Square the result of #1 and store that result.
+> Calculate the area of a circle with the result of #2 as the radius.
+> Calculate what percentage that area is of the squared result (#3). -->
